@@ -43,24 +43,22 @@
 			  </nav>
 
 			<!--Itenary list container-->
-			<div id="trip-interface">
+			<div id="container-fluid">
 				<div>
 					<ul id="destination-list"></ul>
 					<p id="final-location"></p>								
 				</div>
 			</div>
 
-			<div class="bottom-field m-3">
-				<div class="card"> <!--Row for Automatic Distance Field-->
-					<div class="card-body">
-						<p>The Total Trip Distance is:<p id="trip-distance"></p></p>
-					</div>
-				</div>
-	
+			<div class="card-body">
+				<p>The Total Trip Distance is:<p id="trip-distance"></p></p>
+			</div>
+
+			<div class="bottom-field m-3"> <!--Row for Automatic Distance Field-->
 				<!--Trip controls-->
 				<div class="m-2">
-					<div class="card-body p-3">
-						<div class="btn-toolbar button-center" role="toolbar" aria-label="Toolbar with button groups">
+					<div class="p-3">
+						<div class="button-center" role="toolbar" aria-label="Toolbar with button groups">
 							<div class="btn-group me-2" role="group" aria-label="First group">
 							  <button type="button" class="btn btn-primary" id="remove-button">Remove From List</button>
 							</div>
@@ -97,18 +95,20 @@
 				</div>
 			</div> 
 		</div>
-			
-		<div id="interactive-map"> <!--Interactive Map-->
-			<div id='map'></div>
-				<script>
-				mapboxgl.accessToken = 'pk.eyJ1IjoiZGFubnlib3l6eno5IiwiYSI6ImNrcnp6cXZtNTAwMWkydXJ5NjhubXRqeHYifQ.GWer-z8j4EgLpuxK_6ddlQ';
-				const map = new mapboxgl.Map({
-				container: 'map', // container ID
-				style: 'mapbox://styles/mapbox/streets-v11', // style URL
-				center: [172.62, -43.53], // starting position [lng, lat]
-				zoom: 11 // starting zoom
-				});
-				</script>
+		
+		<div class="container-fluid">
+			<div id="interactive-map"> <!--Interactive Map-->
+				<div id='map'></div>
+					<script>
+					mapboxgl.accessToken = 'pk.eyJ1IjoiZGFubnlib3l6eno5IiwiYSI6ImNrcnp6cXZtNTAwMWkydXJ5NjhubXRqeHYifQ.GWer-z8j4EgLpuxK_6ddlQ';
+					const map = new mapboxgl.Map({
+					container: 'map', // container ID
+					style: 'mapbox://styles/mapbox/streets-v11', // style URL
+					center: [172.62, -43.53], // starting position [lng, lat]
+					zoom: 11 // starting zoom
+					});
+					</script>
+			</div>
 		</div>
 	</Main>
 </body>
