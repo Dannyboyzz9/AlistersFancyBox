@@ -93,17 +93,6 @@ fieldset label {
     float: right;
 }
 
-/* CSS for the Trip Planner Controls*/
-#control-container{
-    align-items: center;
-}
-.control-row{
-    align-content: center;
-}
-.control-button{
-    color: black;
-}
-
 /* CSS for the Rightside map */
 
 #map { 
@@ -114,11 +103,6 @@ fieldset label {
 }
 
 /* CSS for each section/row of the */
-header{
-    text-align: justify;
-    padding: 2em;
-    background-color: blueviolet
-}
 #search-background{
     margin-left : 2em;
 	margin-right : 2em;
@@ -139,9 +123,15 @@ header{
 }
 #fuel-calc{
     float: left;
+
     margin-left : 2em;
 	margin-right : 2em;
 	margin-top : 1em;
+}
+
+.bottom-field{
+    position:absolute;
+    bottom:0;
 }
 
 li.selected {
